@@ -19,4 +19,7 @@ def kelvin_to_fahrenheit(kelvin):
     celsius = kelvin_to_celsius(kelvin)
     return celsius_to_fahrenheit(celsius)
 
+temperature = float(input("Enter temperature value: "))
+unit = input("Enter the unit (Celsius, Fahrenheit, or Kelvin): ").strip().lower()
+
 
