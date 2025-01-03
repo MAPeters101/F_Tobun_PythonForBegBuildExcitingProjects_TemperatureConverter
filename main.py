@@ -22,4 +22,11 @@ def kelvin_to_fahrenheit(kelvin):
 temperature = float(input("Enter temperature value: "))
 unit = input("Enter the unit (Celsius, Fahrenheit, or Kelvin): ").strip().lower()
 
+if unit == "celsius":
+    fahrenheit_temperature = celsius_to_fahrenheit(temperature)
+    kelvin_temperature = celsius_to_kelvin(temperature)
+    print(f"{temperature} degrees Celsius is equal to {fahrenheit_temperature} degrees Fahrenheit")
+    print(f"{temperature} degrees Celsius is equal to {kelvin_temperature} degrees Kelvin")
+
+
 
