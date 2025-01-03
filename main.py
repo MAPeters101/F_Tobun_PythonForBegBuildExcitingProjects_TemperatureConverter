@@ -25,8 +25,13 @@ unit = input("Enter the unit (Celsius, Fahrenheit, or Kelvin): ").strip().lower(
 if unit == "celsius":
     fahrenheit_temperature = celsius_to_fahrenheit(temperature)
     kelvin_temperature = celsius_to_kelvin(temperature)
-    print(f"{temperature} degrees Celsius is equal to {fahrenheit_temperature} degrees Fahrenheit")
-    print(f"{temperature} degrees Celsius is equal to {kelvin_temperature} degrees Kelvin")
+    print(f"{temperature} degrees Celsius is equal to {fahrenheit_temperature:.2f} degrees Fahrenheit")
+    print(f"{temperature} degrees Celsius is equal to {kelvin_temperature:.2f} degrees Kelvin")
+elif unit == "fahrenheit":
+    celsius_temperature = fahrenheit_to_celsius(temperature)
+    kelvin_temperature = fahrenheit_to_kelvin(temperature)
+    print(f"{temperature} degrees Fahrenheit is equal to {celsius_temperature:.2f} degrees Celsius")
+    print(f"{temperature} degrees Fahrenheit is equal to {kelvin_temperature:.2f} degrees Kelvin")
 
 
 
